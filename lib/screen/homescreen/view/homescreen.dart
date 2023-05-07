@@ -24,7 +24,7 @@ class _HomescreenState extends State<Homescreen> with SingleTickerProviderStateM
   @override
   void initState() {
     // TODO: implement initState
-    animationController = AnimationController(vsync: this,duration: Duration(seconds: 2));
+    animationController = AnimationController(vsync: this,duration: Duration(seconds: 3));
     sizeTween = Tween<double>(begin: 90,end: 200).animate(animationController!);
     leftOffsetTween = Tween<Offset>(begin: Offset(-200, 0),end: Offset(0,0)).animate(animationController!);
     rightOffsetTween = Tween<Offset>(begin: Offset(200, 0),end: Offset(0,0)).animate(animationController!);
